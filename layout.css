@@ -1,0 +1,279 @@
+/* ABRI FATFACE FONT */
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+/* POPPINS FONT */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ===== COLOR VARIABLES ===== */
+:root{
+    --first-color: #6429EF;
+    --second-color: #E7DBDB;
+    --third-color: #FFFFFF;
+    --black-color: #000000;
+    --dark-blue: #372461;
+    --bg-color: #FFFFFF;
+    --blur-element-color: #E7DBDB;
+    --shadow-1: 0 0 20px 5px rgb(101, 41, 240, 0.5); 
+    --shadow-2: 0 0 20px 5px rgb(232, 219, 219);
+}
+body{
+    background-color: var(--bg-color);
+}
+/* ===== DARK MODE COLOR VARIABLES ===== */
+
+/* ===== Blur Background ===== */
+.wrapper{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent ;
+    
+}
+.wrapper::before{
+    content: '';
+    position: absolute;
+    top: 160px;
+    right: 10vm;
+    width: 200px;
+    height: 200px;
+    background-color: var(--blur-element-color);
+    border-radius: 50%;
+    z-index: 1;
+}
+.wrapper::after{
+    content: '';
+    position: absolute;
+    top: 160px;
+    right: 10vw;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: var(--blur-element-color);
+    z-index: 0;
+}
+.wrapper .circle-1{
+    position: absolute;
+    bottom: 100px;
+    left: 60%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--first-color);
+    z-index: 0;  
+}
+/* ===== Header - Navigation Bar ===== */
+header{
+    position: fixed;
+    font-family: 'Abri Fatface',serif;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    padding: 0 8vw;
+    z-index: 50;
+}
+.logo span{
+    font-size: 35px;
+    color: var(--black-color);
+}
+.nav-menu{
+    display: flex;
+    list-style: none;
+}
+.nav-list{
+    padding: 0 30px ;
+}
+.nav-link{
+    position: relative;
+    text-decoration:none ;
+    color: var(--black-color);
+    font-size: 18px;
+    transition: 3s;
+
+    }
+.nav-link:hover{
+    color: var(--first-color);
+
+}
+    .li:hover{
+        color: var(--first-color);
+    }
+    .nav-link::after{
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -7px;
+        width: 100%;
+        height: 2px;
+        transform: scaleX(0);
+        transition: transform .3s;
+        transform-origin: right;
+        background-color: var(--first-color);
+    }
+    .nav-link:hover::after{
+       transform: scaleX(1); 
+       transform-origin: left;
+    }
+    .nav-button{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+    .btn{
+        padding: 0 24px;
+        height: 45px;
+        border: none;
+        border-radius: 50px;
+        font-size: 15px;
+        cursor: pointer;
+        transition: opacity .3s;
+    }
+    .btn:hover{
+        font-family: 'Abril Fatface', serif ;
+        background-color: var(--second-color);
+    }
+    .hire-me-btn{
+      font: 'Abril Fatface', serif;
+      background-color: var(--second-color);  
+    }
+    .nav-button span{
+        color: var(--black-color);
+        cursor: pointer;
+    }
+    .nav-button .dark-mode-toggle{
+        font-size: 18px;
+    }
+    .nav-button .menu-toggle{
+        display: none;
+        font-size: 24px;
+        cursor: pointer;
+    }
+/* ===== Hero section ===== */
+.hero{
+    position: relative;
+    display: flex;
+    padding: 0 8vm;
+    width: 100%;
+    height: 100vh;
+    z-index:5 ;
+}
+.col{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+.hero-work{
+    font-family:'Abril Fatface', serif ;
+    font-size: 50px;
+    color: var(--black-color);
+}
+.hero-description{
+    font-family: 'Poppins',sans-serif;
+    padding-block: 20px 30px;
+    width: 500px;
+    color: var(--black-color);
+}
+.hero-buttons{
+    display: flex;
+    gap: 20px;
+
+}
+.download-btn{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--first-color);
+    color: var(--third-color);
+    box-shadow: var(--shadow-1);
+}
+.play-btn{
+    padding: 0;
+    width: 45px;
+    background-color: var(--second-color);
+    box-shadow: var(--shadow-2);
+}
+.play-btn .bx-play{
+    font-size: 24px;
+}
+.hero-special-icons{
+    position: absolute;
+    bottom: 80px;
+    display: flex;
+    gap:50px ;
+}
+.hero-special-icons i{
+    font-size: 24px;
+    color: var(--black-color);
+    cursor: pointer;
+    transition: color 3s;
+}
+.hero-special-icons i:hover{
+    color: var(--first-color);
+}
+.col-2{
+  position:relative; 
+  display: flex;
+  align-items: flex-end; 
+}
+
+.hero-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.hero-img-container{
+    width: 400px;
+    height: 405px;
+    background: var(--first-color);
+    border-radius: 46% 54% 34% 66% / 54% 61% 39% 46%;
+    overflow: hidden;
+}
+.hero-img-container::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -6px;
+    transform: translateY(-50%);
+    width:410px ;
+    height: 415px;
+    border: 2px solid (--first-color);
+     border-radius: 46% 54% 34% 66% / 54% 61% 39% 46%;
+
+}
+
+
+.hero-img-container {
+    width: 400px;
+    height: 405px;
+    background: var(--first-color);
+    border-radius: 46% 54% 34% 66% / 54% 61% 39% 46%;
+    overflow: hidden;
+    position: relative; /* Add this */
+}
+
+.hero-img {
+    width: 100%; /* Change from height to width */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove extra space below image */
+    object-fit: cover; /* Ensure image covers container */
+}
+/* ====== Hero Image section ===== */
+
+
+/* ===== Animations ==== */
+
+
+/* ===== Responsive Design ===== */
