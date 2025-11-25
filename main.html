@@ -9,66 +9,165 @@
     <title>Portfolio | Thabiso</title>
 </head>
 <body>
-<div class="wrapper">
-    <div class="circle-1">
-
+    <div class="wrapper">
+        <div class="circle-1"></div>
+        <header id="header">
+            <div class="logo">
+                <span>Thabiso Mak.</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-list">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-list">
+                    <a href="#services" class="nav-link">Services</a>
+                </li>
+                <li class="nav-list">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-list">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="nav-button">
+                <button class="btn hire-me-btn">Hire Me</button>
+                <span class="dark-mode-toggle"><i class="bx bx-moon"></i></span>
+                <span class="menu-toggle"><i class="bx bx-menu"></i></span>
+            </div>
+        </header>
     </div>
-    <header>
-        <div class="logo">
-            <span>Thabiso Mak.</span>
-        </div>
-        <ul class="nav-menu">
-            <li class="nav-list">
-                <a href="#" class="nav-link">Home</a>
+    
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <span class="close-menu" id="closeMenu"><i class="bx bx-x"></i></span>
+        <ul class="mobile-nav-menu">
+            <li class="mobile-nav-list">
+                <a href="#home" class="mobile-nav-link">Home</a>
             </li>
-             <li class="nav-list">
-                <a href="#" class="nav-link">Services</a>
+            <li class="mobile-nav-list">
+                <a href="#services" class="mobile-nav-link">Services</a>
             </li>
-             <li class="nav-list">
-                <a href="#" class="nav-link">Projects</a>
+            <li class="mobile-nav-list">
+                <a href="#projects" class="mobile-nav-link">Projects</a>
             </li>
-             <li class="nav-list">
-                <a href="#" class="nav-link">Contact</a>
+            <li class="mobile-nav-list">
+                <a href="#contact" class="mobile-nav-link">Contact</a>
             </li>
         </ul>
-        <div class="nav-button">
-            <button class="btn hire-me-btn">Hire Me</button>
-            <span class="dark-mode-toggle"><i class="bx bx-moon"></i></span>
-            <span class="menu-toggle"><i class="bx bx-menu"></i></span>
-        </div>
-    </header>
-</div>
-<div class="hero">
-    <div class="col col-1">
-        <div class="hero-work">
-          <p>I am <br>Software <span style="color: var(--dark-blue);">Developer</span></p>  
-        </div>
-        <div class="hero-description">
-            <p>I am a software developer, proficient in coding, designing and mantaining software</p>
-        </div>
-        <div class="hero-buttons">
-            <button class=" btn download-btn">
-                <i class="bx bx-file"></i>
-                <span>Download Cv</span>
-            </button>
-            <button class="btn play-btn">
-                <i class="bx bx-play"></i>
-            </button>
-        </div>
-        <div class="hero-special-icons">
-            <a href="https://github.com/ThabisoBMakhanya" target="_blank" rel="noopener noreferrer" style="display: inline-block;">
-                <i class="bx bxl-github"></i>
+        <button class="btn hire-me-btn">Hire Me</button>
+        <button class="btn download-btn">
+            <i class="bx bx-file"></i>
+            <a href="./Thabiso Makhanya.pdf" download="Thabiso Makhanya.pdf" style="text-decoration: none; color: inherit;">
+                <span>Download CV</span>
             </a>
-            <i class="bx bxl-dribbble"></i>
-            <i class="bx bxl-twitter"></i>
-            <i class="bx bxl-facebook-circle"></i>
-        </div>
+        </button>
     </div>
-    <div class="col col-2">
-        <div class="hero-img-container">
-            <img src="Thabiso.png" alt="img" class="hero-img">
+    
+    <div class="overlay" id="overlay"></div>
+    
+    <section id="home" class="hero">
+        <div class="col col-1">
+            <div class="hero-work">
+                <p>I am <br>Software <span style="color: var(--dark-blue);">Developer</span></p>
+            </div>
+            <div class="hero-description">
+                <p>I am a software developer, proficient in coding, designing and maintaining software</p>
+            </div>
+            <div class="hero-buttons">
+                <button class="btn download-btn">
+                    <i class="bx bx-file"></i>
+                    <a href="./Thabiso Makhanya.pdf" download="Thabiso Makhanya.pdf" style="text-decoration: none; color: inherit;">
+                        <span>Download CV</span>
+                    </a>
+                </button>
+                <button class="btn play-btn">
+                    <i class="bx bx-play"></i>
+                </button>
+            </div>
+            <div class="hero-special-icons">
+                <a href="https://github.com/ThabisoBMakhanya" target="_blank" rel="noopener noreferrer" style="display: inline-block;">
+                    <i class="bx bxl-github"></i>
+                </a>
+                <i class="bx bxl-dribbble"></i>
+                <a href="https://x.com/thecityflame">
+                    <i class="bx bxl-twitter"></i>
+                </a>
+                <a href="https://www.facebook.com/thabisokingsley.makhanya">
+                    <i class="bx bxl-facebook-circle"></i>
+                </a>
+            </div>
         </div>
-    </div>
-</div>
+        <div class="col col-2">
+            <div class="hero-img-container">
+                <img src="Thabiso.jpg" alt="Thabiso Makhanya" class="hero-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Sections -->
+    <section id="services" class="section">
+        <div class="container">
+            <h2 class="section-title">My Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="bx bx-code-alt"></i>
+                    <h3>Web Development</h3>
+                    <p>Creating responsive and modern websites using latest technologies.</p>
+                </div>
+                <div class="service-card">
+                    <i class="bx bx-mobile-alt"></i>
+                    <h3>Mobile Development</h3>
+                    <p>Building cross-platform mobile applications for iOS and Android.</p>
+                </div>
+                <div class="service-card">
+                    <i class="bx bx-data"></i>
+                    <h3>Database Design</h3>
+                    <p>Designing efficient and scalable database architectures.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image"></div>
+                    <h3>University Database System</h3>
+                    <p>MySQL database for managing student records and courses.</p>
+                </div>
+                <div class="project-card">
+                    <div class="project-image"><img src="./Portifolio-img.png" alt=""></div>
+                    <h3>Portfolio Website</h3>
+                    <p>Responsive portfolio website built with HTML, CSS, and JavaScript.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="bx bx-envelope"></i>
+                        <span>bonganithabiso84@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="bx bx-phone"></i>
+                        <span>(+268) 76 964 082</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="bx bx-map"></i>
+                        <span>Mbabane, Eswatini</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
